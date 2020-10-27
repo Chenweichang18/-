@@ -1,0 +1,15 @@
+.p1{position: absolute;height: 250rpx;width: 250rpx;top: 70rpx;left: 262.5rpx;
+}
+.btn1{width: 690rpx;height: 88rpx;position: absolute;display: flex; align-items: center;justify-content: center;top: 500rpx;left: 30rpx;font-size: 34rpx;size: 20rpx;background: #3588ad;
+}
+.btn2{width: 690rpx;height: 88rpx;position: absolute;display: flex; align-items: center;justify-content: center;top: 620rpx;left: 30rpx;font-size: 34rpx;size: 20rpx;background: white;
+}
+.btn1_hover{background: #6572ffcb}
+.t1{color: white;
+}
+.t2{color: black;
+}
+.l1{position: absolute;top: 350rpx;left: 310rpx;font-size: 36rpx;
+}
+.l2{position: absolute;top: 420rpx;left: 232rpx;font-size: 30rpx;color: gray;
+}

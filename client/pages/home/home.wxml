@@ -1,0 +1,119 @@
+<!-- 轮番图 -->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+  <block wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="index">
+    <swiper-item>
+      <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 定位栏 -->
+<view class="dw">
+  <!-- 将定位图标以及当前所在包含在view里，点击触发事件 -->
+  <view class="dw1" bindtap="demo()">
+    <image class="img1" src="../images/dinwei.png"></image>
+    <text class="t1">当前所在</text>
+  </view>
+  <text class="t2">土豪村</text>
+  <text class="t3">已认证</text>
+</view>
+
+<!-- 功能栏 -->
+<view class="gn">
+  <!-- 村干选举 -->
+  <view class="cg" bindtap="xjtiaozhuan">
+    <image style="width:74rpx;height:74rpx" src="../images/cungan.png"></image>
+    <text class="t4">村干选举</text>
+  </view>
+  <!-- 财务公示 -->
+  <view class="cw" bindtap="cwtiaozhuan">
+    <image style="width:74rpx;height:74rpx" src="../images/caiwu.png"></image>
+    <text class="t4">财务公示</text>
+  </view>
+  <!-- 光荣榜 -->
+  <view class="gr" bindtap="grtiaozhuan">
+    <image style="width:74rpx;height:74rpx" src="../images/guangrong.png"></image>
+    <text class="t4">光荣榜</text>
+  </view>
+  <!-- 信息登记 -->
+  <view class="xx" bindtap="xxtiaozhuan">
+    <image style="width:74rpx;height:74rpx" src="../images/xinxi.png"></image>
+    <text class="t4">信息登记</text>
+  </view>
+  <!-- 村民审核 -->
+  <view wx:if="{{job=='村干部'}}" class="cm" bindtap="cmtiaozhuan">
+    <image style="width:74rpx;height:74rpx" src="../images/cunming.png"></image>
+    <text class="t4">村民审核</text>
+  </view>
+
+  <view wx:if="{{job=='村民'}}" class="cm">
+    <image style="width:74rpx;height:74rpx" src="../images/cunming.png"></image>
+    <text class="t4">功能代办</text>
+  </view>
+  <view wx:if="{{job=='游客'}}" class="cm">
+    <image style="width:74rpx;height:74rpx" src="../images/cunming.png"></image>
+    <text class="t4">功能代办</text>
+  </view>
+  <!-- 反馈箱 -->
+  <view class="fk" bindtap="fktiaozhuan">
+    <image style="width:74rpx;height:74rpx" src="../images/fankui.png"></image>
+    <text class="t4">反馈箱</text>
+  </view>
+</view>
+
+<!-- 特色栏 -->
+<view class="ts">
+  <!-- <view style="margin-left:212rpx;">
+    <image style="margin-top:24rpx;width:100rpx;height:3rpx;float:left;" src="../images/特色旁边的线.png"></image>
+    <text style="font-size:40rpx;float:left">特色</text>
+    <image style="margin-top:24rpx;width:100rpx;height:3rpx;float:left;" src="../images/特色旁边的线.png"></image>
+  </view> -->
+
+  <!-- 特产 -->
+  <view style="width:630rpx;height:320rpx;clear:both;margin-left:35rpx;padding:0rpx;">
+    <text style="font-size:36rpx;float:left;">特产</text>
+    <navigator url="../characteristic/characteristic?url1=../images/zhu.png&url2=../images/wan.png&name=特产">
+      <view style="float:right;background-color:white;width:100rpx;height:50rpx;display:flex;justify-content:center;align-items:center;border-radius:20rpx;margin-left:20rpx;border:5rpx solid red;color:red;font-size:22rpx;margin-bottom:30rpx;">更多>></view>
+    </navigator>
+
+    <view style="clear:both;">
+    <image style="width:300rpx;height:200rpx;float:left;display:block;" src="../images/zhu.png"></image>
+    <image style="width:300rpx;height:200rpx;float:right;display:block;" src="../images/wan.png"></image>
+    </view>
+    
+  </view>
+
+ <!-- 习俗 -->
+  <view style="width:630rpx;height:320rpx;clear:both;margin-left:35rpx;padding:0rpx;">
+    <text style="font-size:36rpx;float:left;">习俗</text>
+    <navigator url="../characteristic/characteristic?url1=../images/chaoju.png&url2=../images/chaoxiu.png&name=习俗">
+      <view style="float:right;background-color:white;width:100rpx;height:50rpx;display:flex;justify-content:center;align-items:center;border-radius:20rpx;margin-left:20rpx;border:5rpx solid red;color:red;font-size:22rpx;margin-bottom:30rpx;">更多>></view>
+    </navigator>
+
+    <view style="clear:both;">
+    <image style="width:300rpx;height:200rpx;float:left;display:block;" src="../images/chaoju.png"></image>
+    <image style="width:300rpx;height:200rpx;float:right;display:block;" src="../images/chaoxiu.png"></image>
+    </view>
+    
+  </view>
+
+ <!-- 景色 -->
+  <view style="width:630rpx;height:320rpx;clear:both;margin-left:35rpx;padding:0rpx;">
+    <text style="font-size:36rpx;float:left;">景色</text>
+    <navigator url="../characteristic/characteristic?url1=../images/nanao.png&url2=../images/fangte.png&name=景色">
+      <view style="float:right;background-color:white;width:100rpx;height:50rpx;display:flex;justify-content:center;align-items:center;border-radius:20rpx;margin-left:20rpx;border:5rpx solid red;color:red;font-size:22rpx;margin-bottom:30rpx;">更多>></view>
+    </navigator>
+
+    <view style="clear:both;">
+    <image style="width:300rpx;height:200rpx;float:left;display:block;" src="../images/nanao.png"></image>
+    <image style="width:300rpx;height:200rpx;float:right;display:block;" src="../images/fangte.png"></image>
+    </view>
+    
+  </view>
+
+
+<!-- <navigator url="../characteristic/characteristic?url1=../images/图层 2741.png&url2=../images/图层 27422.png&name=习俗">
+  <view style="background-color:white;width:150rpx;height:80rpx;display:flex;justify-content:center;align-items:center;border-radius:20rpx;margin-left:20rpx;border:5rpx solid red;color:red;">更多>></view>
+ </navigator> -->
+  
+</view>

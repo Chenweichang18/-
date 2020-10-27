@@ -1,0 +1,143 @@
+/* client/pages/honor/honor.wxss */
+
+page {
+  background-color: #f6f6f6;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.tab {
+  height: 100rpx;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  border-bottom: solid 8rpx #ffa03b;
+  margin-left: 30rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #ffa03b;
+  font-size: 35rpx;
+}
+
+.right {
+  flex: 1;
+  border-bottom: solid 0rpx #ffa03b;
+  margin-right: 30rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 35rpx;
+}
+
+.content {
+  background-color: #f6f6f6;
+  margin-bottom: 160rpx;
+}
+
+.item {
+  height: 299rpx;
+  background-color: white;
+  margin-left: 28rpx;
+  border-radius: 20rpx;
+  margin-right: 28rpx;
+  margin-top: 20rpx;
+}
+
+.title {
+  height: 99rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  display: flex;
+}
+
+.item_left {
+  flex: 1;
+  text-align: left;
+  line-height: 99rpx;
+  margin-left: 47rpx;
+  font-size: 35rpx;
+}
+
+.item_right {
+  flex: 1;
+  display: flex;
+}
+
+.item_right_left {
+  flex: 3;
+  text-align: right;
+  line-height: 99rpx;
+  color: #ffa03b;
+  font-size: 35rpx;
+}
+
+.item_right_right {
+  flex: 1;
+  text-align: center;
+  line-height: 99rpx;
+}
+
+.image {
+  width: 28rpx;
+  height: 16rpx;
+}
+
+.line {
+  height: 2rpx;
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  background-color: #f6f6f6;
+}
+
+.message {
+  margin-top: 29rpx;
+  margin-left: 32rpx;
+  font-size: 35rpx;
+  color: #888;
+}
+
+.msg {
+  margin-top: 29rpx;
+  margin-left: 32rpx;
+  color: #888;
+}
+
+.add-view {
+  position: fixed;
+  width: 100%;
+  height: 99rpx;
+  text-align: center;
+  line-height: 99rpx;
+  bottom: 0;
+  padding-bottom: 40rpx;
+  background-color: #f6f6f6;
+}
+
+.btn {
+  color: #ffa03b;
+  font-size: 35rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  border-radius: 8rpx;
+  border: 2rpx solid #fd7276;
+}
+
+.item_name {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.msg_name {
+  width: 150rpx;
+  flex: 1;
+  font-size: 32rpx;
+  color: #353535;
+}

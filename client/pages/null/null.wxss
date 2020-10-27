@@ -1,0 +1,6 @@
+.p1
+{
+  position: absolute;
+  top: 20%;
+  left: 8.2%;
+}

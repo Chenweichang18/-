@@ -1,0 +1,21 @@
+page{background-color: rgb(244, 244, 244);
+}
+.swiper-tab{  width: 100%;  border-bottom: 2rpx solid whitesmoke;  text-align: center;  line-height: 80rpx;margin-bottom: 20rpx;}  
+.swiper-tab-list{ font-size: 30rpx;  display: inline-block;  width: 350rpx;  color: black;  
+}  
+.on{color: black;border-bottom: 5rpx solid #3588ad;
+}
+.swiper-box{display: block;height: 100%;width: 100%; overflow: hidden; 
+} 
+scroll-view{height: 100%;
+}
+.container{padding: 10rpx;display: flex;justify-content: flex-start;
+}
+.newsitem{width: 694rpx;height: 99rpx;display: flex;flex-direction: row;justify-content:center;margin-left: 28rpx;margin-bottom: 20rpx;background-color: white;border-radius: 20rpx;position: relative;
+}
+.n1{width: 694rpx;height: 99rpx;display: flex;flex-direction: row;justify-content:center;margin-left: 28rpx;margin-bottom: 20rpx;background-color: white;border-radius: 20rpx;position: relative;
+}
+.mz{position: absolute; font-size: 35rpx;left:27rpx;top: 26rpx;}
+.wsh{position: absolute; font-size: 35rpx;right:47rpx;top: 26rpx;color: red;}
+.zt1{position: absolute; font-size: 35rpx;right:47rpx;top: 26rpx;color: #1aad19;}
+.zt2{position: absolute; font-size: 35rpx;right:47rpx;top: 26rpx;color: red;}

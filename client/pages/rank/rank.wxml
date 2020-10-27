@@ -1,0 +1,48 @@
+<image style='width:750rpx;height:603rpx' src='../images/paihang.png'></image>
+<image style='width:199rpx;height:198rpx;position:absolute;left:276rpx;top:182rpx;' src="../images/jiangbei.png"></image>
+<view style="display:flex;justify-content:center;width:100%;"><text class="t1">{{i_position}}</text></view>
+<view class="view1">
+  <view class="lan">
+    <text>排名</text>
+    <label style="color:transparent">x<text style="color:black;">选举人</text></label>
+    <text>票数</text>
+  </view>
+  <!-- 1 -->
+  <view class="lan">
+    <label style="color:transparent"><image style="width:53rpx;height:47rpx;" src="../images/1.png"></image></label>
+    <text>{{list[0].name}}</text>
+    <text>{{list[0].voteNumber}}</text>
+  </view>
+  <!-- 2 -->
+  <view class="lan">
+    <label style="color:transparent"><image style="width:53rpx;height:47rpx;" src="../images/2.png"></image></label>
+    <text>{{list[1].name}}</text>
+    <text>{{list[1].voteNumber}}</text>
+  </view>
+  <!-- 3 -->
+  <view class="lan">
+    <label style="color:transparent"><image style="width:53rpx;height:47rpx;" src="../images/3.png"></image></label>
+    <text>{{list[2].name}}</text>
+    <text>{{list[2].voteNumber}}</text>
+  </view>
+  <!-- 4 -->
+  <view class="lan" wx:if="{{list[3]!=null}}">
+    <label style="color:transparent">x<text style="color:#a460f9;">4</text></label>
+    <text>{{list[3].name}}</text>
+    <text>{{list[3].voteNumber}}</text>
+  </view>
+  <!-- 5 -->
+  <view class="lan" wx:if="{{list[4]!=null}}">
+    <label style="color:transparent">x<text style="color:#a460f9;">5</text></label>
+    <text>{{list[4].name}}</text>
+    <text>{{list[4].voteNumber}}</text>
+  </view>
+  <!-- 6 -->
+  <view class="lan" wx:if="{{list[5]!=null}}">
+    <label style="color:transparent">x<text style="color:#a460f9;">6</text></label>
+    <text>{{list[5].name}}</text>
+    <text>{{list[5].voteNumber}}</text>
+  </view>
+
+</view>
+<view class="view2">恭喜{{list[0].name}}胜任{{i_position}}一职</view>

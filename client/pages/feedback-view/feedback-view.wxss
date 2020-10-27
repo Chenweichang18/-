@@ -1,0 +1,18 @@
+page{background-color: rgb(244, 244, 244);padding-top: 20rpx;
+}
+.newsitem{width: 694rpx; margin-left: 28rpx;margin-bottom: 20rpx;background-color: white;border-radius: 20rpx;position: relative;
+}
+.mz{position: absolute; font-size: 35rpx;left:27rpx;top: 26rpx;}
+.tm{position: absolute; font-size: 32rpx;right:27rpx;top: 27rpx;}
+
+.zhankai{width: 150rpx;height: 40rpx;background-color: white; position: absolute;right: 0rpx;bottom: 7rpx;font-size: 32rpx;border-radius: 50rpx;}
+.t1{font-size:32rpx;position:absolute;top:1rpx;left:70rpx;color:rgb(168, 168, 168);}
+
+.yuan {
+  padding-top: 80rpx;padding-left: 40rpx; line-height: 51rpx;
+  height: 100rpx;
+  overflow: hidden;
+}
+.hou {
+  height: auto;
+}

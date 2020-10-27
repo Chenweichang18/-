@@ -1,0 +1,13 @@
+<view class='view'>查看选票情况</view>
+<navigator class="n1" url="../rank/rank?position=村长&name={{i_name}}">
+<view class='view1'>村长</view>
+</navigator>
+<navigator class="n1" url="../rank/rank?position=副村长&name={{i_name}}">
+<view class='view2'>副村长</view>
+</navigator>
+<navigator class="n1" url="../rank/rank?position=村干部&name={{i_name}}">
+<view class='view3'>村干部</view>
+</navigator>
+<navigator class="n1" url="../rank/rank?position=书记&name={{i_name}}">
+<view class='view4'>书记</view>
+</navigator>

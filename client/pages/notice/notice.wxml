@@ -1,0 +1,45 @@
+<!--client/pages/notice.wxml-->
+<view class="page" style="position:{{false?relative:fixed}};">
+  <!-- 通知列表 -->
+  <scroll-view class="full" scroll-y='{{true}}' hidden="{{false}}">
+    <block wx:for='{{noticeList}}' wx:key='index'>
+      <view class="item" bindtap="itemClick" data-index="{{index}}">
+        <view class="notice_item">
+          <view class="left">
+            <text class="title">{{item.noticeName}}</text>
+            <image src="../images/tips.png" class="tips"></image>
+          </view>
+          <view class="right">
+            <text class="title_right" style="{{item.noticeStatus=='进行中'?' color: #1aad19;':''}}">{{item.noticeStatus}}</text>
+            <image src="../images/{{flag[index]?'bottom.png':'right.png'}}" style="{{flag[index]?' width: 28rpx;height: 16rpx':' width: 16rpx;height: 28rpx;margin-bottom: 0rpx;'}}" class="luanch"></image>
+          </view>
+        </view>
+        <view class="line" hidden="{{!flag[index]}}"></view>
+        <view class="notice_content" hidden="{{!flag[index]}}">
+          <view class="fuzuren">
+            <view class="fuze_title">负责人</view>
+            <view class="fuze_name">{{item.noticeHum}}</view>
+          </view>
+          <view class="start_time">
+            <view class="start_title">开始时间</view>
+            <view class="start_name">{{item.noticeStarTime}}</view>
+          </view>
+          <view class="stop_time">
+            <view class="stop_title">结束时间</view>
+            <view class="stop_name">{{item.noticeEndTime}}</view>
+          </view>
+          <view class="activity_title">活动内容</view>
+          <view class="activity_content">{{item.noticeContent}}</view>
+        </view>
+      </view>
+    </block>
+    <!-- 添加按钮 -->
+    <view class="full_add" bindtap="add" hidden="{{visible}}">
+      <view class="add_btn">添加</view>
+    </view>
+  </scroll-view>
+  <!-- 无通知背景 -->
+  <view class="null_bg" hidden="{{true}}">
+    <image src="../images/null_notice.png" class="img_bg"></image>
+  </view>
+</view>

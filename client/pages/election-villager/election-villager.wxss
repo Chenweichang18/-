@@ -1,0 +1,8 @@
+page{background-color: rgb(244, 244, 244);padding-top: 30rpx;}
+.find{width: 560rpx;height: 65rpx;border-radius: 20rpx;margin:0rpx 15rpx 20rpx 28rpx;background-color: white;float: left;display: flex;align-items: center;}
+.find .img1{width: 30rpx;height: 30rpx;display: block; float: left;margin-left: 20rpx;}
+.find .input1{width: 300rpx;float: left;margin-left: 100rpx;}
+.find .btn1{float: right;font-size: 30rpx;color: #fe6c6c;margin-left:30rpx;}
+.all{width: 110rpx;height: 65rpx;float: right;margin-top: 0rpx;margin-right: 30rpx; font-size: 30rpx;border-radius: 15rpx;background-color: white;display: flex;justify-content: center;align-items: center;}
+.item{width: 694rpx;height: 99rpx;background-color: white;clear: both;border-radius: 20rpx;margin-left: 28rpx;display: flex;align-items: center;justify-content: space-between;margin-bottom: 20rpx;}
+.btn2{width:287rpx;height:70rpx;background-color:#fe6c6c;font-size:34rpx;display:flex;justify-content: center;align-items: center;border-radius: 10rpx;position: absolute;left: 230rpx;bottom: 50rpx;color: white;}

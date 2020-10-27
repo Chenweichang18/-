@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/talk/talk",
+    "pages/about/about",
+    "pages/financialNotice/financialNotice",
+    "pages/enterPersonage/enterPersonage",
+    "pages/honor/honor",
+    "pages/addCgi/addCgi",
+    "pages/financialAdd/financialAdd",
+    "pages/notice/notice",
+    "pages/characteristic/characteristic",
+    "pages/election-definition-cm/election-definition-cm",
+    "pages/addNotice/addnotice",
+    "pages/election/election",
+    "pages/theme/theme",
+    "pages/election-definition/election-definition",
+    "pages/audit/audit",
+    "pages/audit-not/audit-not",
+    "pages/audited/audited",
+    "pages/information/information",
+    "pages/information-update/information-update",
+    "pages/register/register",
+    "pages/feedback/feedback",
+    "pages/feedback-real/feedback-real",
+    "pages/feedback-anonymous/feedback-anonymous",
+    "pages/feedback-view/feedback-view",
+    "pages/djsuccess/djsuccess",
+    "pages/shsuccess/shsuccess",
+    "pages/fksuccess/fksuccess",
+    "pages/mine/mine",
+    "pages/null/null",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "美丽乡村",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/images/shouye.png",
+        "selectedIconPath": "pages/images/shouye-red.png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "通知",
+        "iconPath": "pages/images/tongzhired.png",
+        "selectedIconPath": "pages/images/tongzhired.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/images/myd.png",
+        "selectedIconPath": "pages/images/myd-red.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

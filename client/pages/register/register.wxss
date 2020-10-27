@@ -1,0 +1,23 @@
+page{background-color: rgb(244, 244, 244);padding-top: 30rpx;
+}
+.t1{font-size: 30rpx;margin-left: 25rpx;color: rgba(92, 75, 75, 0.863);
+}
+.t2{font-size: 30rpx;margin-left: 25rpx;color: rgba(92, 75, 75, 0.863);
+}
+.t3{font-size: 30rpx;margin-left: 25rpx;color: rgba(92, 75, 75, 0.863);
+}
+.view1{background-color: white;width: 750rpx;height: 455rpx;margin-top: 18rpx;margin-bottom: 25rpx;
+}
+.view2{background-color: white;width: 750rpx;height: 88rpx;margin-top: 18rpx;margin-bottom: 25rpx; 
+}
+.view3{background-color: white;width: 750rpx;height: 269rpx;margin-top: 18rpx;margin-bottom: 25rpx; 
+}
+.xm{ margin-left: 34rpx; width: 716rpx;height: 60rpx;border-bottom: 2rpx solid #E6E6E6;padding-top: 28rpx;
+}
+.xm2{margin-left: 34rpx; width: 716rpx;height: 60rpx;padding-top: 28rpx;
+}
+.i1{position: absolute; float: left;left:240rpx; font-size: 34rpx;width: auto;
+}
+.btn1{width: 690rpx;height: 88rpx; font-size: 34rpx;size: 20rpx;background: #6573ff;margin-left: 30rpx; margin-bottom: 23rpx;
+}
+.btn1_hover{background: #6572ffcb}

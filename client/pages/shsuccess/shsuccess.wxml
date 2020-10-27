@@ -1,0 +1,5 @@
+<image class="p1" src="../images/ssgreen.png"></image>
+<label class="l1">操作成功</label>
+<label class="l2">点击确定返回审核界面</label>
+<button class='btn1' bindtap='queding' hover-class='btn1_hover'><text class="t1">确定</text></button>
+<button class='btn2' bindtap='fanhui' hover-class='btn1_hover'><text class="t2">返回</text></button>

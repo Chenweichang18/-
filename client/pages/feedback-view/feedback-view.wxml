@@ -1,0 +1,13 @@
+<block wx:for='{{list}}' wx:key='id'>
+ <view class='newsitem'>
+ <view class='mz'>{{item.name}}<image style="width:17rpx;height:17rpx;margin-left:5rpx;margin-bottom:17rpx;" src="../images/hongdian.png" wx:if="{{item.type=='未查阅'}}"></image></view>
+ <text class='tm'>{{item.time}}</text>
+<view id="{{item.id}}" bindtap="kindToggle">
+      <view class="zhankai" wx:if="{{item.duanluo.length>44}}"><text class="t1">{{item.open?'收起':'展开'}}</text></view>
+</view>
+<view class="yuan {{item.open ? 'hou' : ''}}">
+      <text>{{item.duanluo}}</text>
+</view>
+
+ </view>
+ </block>

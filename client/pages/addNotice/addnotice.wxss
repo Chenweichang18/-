@@ -1,0 +1,136 @@
+/* client/pages/addNotice/addnotice.wxss */
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  position: fixed;
+}
+
+.select_time {
+  margin-left: 30rpx;
+  height: 99rpx;
+  font-size: 28rpx;
+  line-height: 99rpx;
+  color: #888;
+}
+
+.start_time {
+  height: 100rpx;
+  background-color: white;
+}
+
+.line {
+  height: 2rpx;
+  width: 100%;
+  background: #f6f6f6;
+  padding-left: 31rpx;
+  margin-right: 31rpx;
+}
+
+.stop_time {
+  height: 100rpx;
+  background-color: white;
+}
+
+.s_time {
+  height: 100rpx;
+  display: flex;
+}
+
+.st_time {
+  height: 100rpx;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  line-height: 100rpx;
+  margin-left: 31rpx;
+  font-size: 34rpx;
+}
+
+.mid {
+  flex: 2;
+  line-height: 100rpx;
+  text-align: left;
+}
+
+.input {
+  height: 100rpx;
+  color: #888;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+
+.img_bottom {
+  width: 28rpx;
+  height: 16rpx;
+  margin-right: 15rpx;
+}
+
+.input_message {
+  height: 99rpx;
+  line-height: 99rpx;
+  color: #888;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+
+.fuzeren {
+  display: flex;
+  height: 99rpx;
+  background-color:white; 
+}
+
+.name {
+  line-height: 99rpx;
+  flex: 1;
+  margin-left: 31rpx;
+  font-size: 34rpx;
+}
+
+.input_name {
+  flex: 3;
+  line-height: 99rpx;
+  height: 99rpx;
+  font-size: 28rpx;
+}
+
+.content {
+  height: 99rpx;
+  display: flex;
+  background: white;
+  padding-bottom: 220rpx;
+}
+
+.c_name {
+  flex: 1;
+  height: 99rpx;
+  line-height: 99rpx;
+  font-size: 34rpx;
+  margin-left: 31rpx;
+}
+
+.c_content {
+  flex: 3;
+  font-size: 28rpx;
+  padding-top: 35rpx;
+  height: 300rpx;
+}
+.add_btn{
+  height: 90rpx;
+  margin: 40rpx;
+  text-align: center;
+  line-height: 90rpx;
+  background-color: #fd7276;
+  font-size: 28rpx;
+  color: white;
+  border-radius: 8rpx;
+  border:  solid 1rpx #5ab859;
+}

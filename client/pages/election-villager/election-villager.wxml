@@ -1,0 +1,38 @@
+<!-- 搜索框 -->
+<view class="find">
+  <image class="img1" src="../images/find.png"></image>
+  <input class="input1" type="text" placeholder="搜索历史选举信息" bindinput='getinput1'></input>
+  <label class="btn1" bindtap="find">搜索</label>
+</view>
+<view class="all" bindtap="findall">{{open?'全部':'返回'}}</view>
+
+<!-- 如果list为空 -->
+  <view wx:if="{{list==''}}" style="clear:both;margin:200rpx 0 0 157rpx;">
+    <image src="../images/wuxj.png" style="width:435rpx;height:412rpx;"></image>
+  </view>
+<!-- for循环内容 -->
+<view wx:for='{{list}}' wx:key='title'>
+  
+  <view class="item">
+  <!-- 正在进行中的大会跳转页面 -->
+  <navigator wx:if="{{item.elstatus=='进行中'}}"  style="background-color: transparent" url='../election-definition-cm/election-definition-cm?name={{item.elcationname}}&explain={{item.elcationExplain}}&TownHead={{item.townHead}}&Governor={{item.governor}}&Towncad={{item.towncad}}&Secretary={{item.secretary}}'>
+    <label style="font-size:36rpx;margin-left:30rpx;">{{item.elcationname}}</label>
+    </navigator>
+    <!-- 未开始的大会跳转页面 -->
+    <label bindtap="kerror" wx:if="{{item.elstatus=='未开始'}}"  style="font-size:36rpx;margin-left:30rpx;">{{item.elcationname}}</label>
+    <!-- 已结束的大会跳转页面 -->
+  <navigator wx:if="{{item.elstatus=='已结束'}}"  style="background-color: transparent" url='../rank-out/rank-out?name={{item.elcationname}}'>
+    <label style="font-size:36rpx;margin-left:30rpx;">{{item.elcationname}}</label>
+    </navigator>
+    <!-- 未开始的按钮 -->
+    <label id="{{item.elcationname}}" bindtap="" wx:if="{{item.elstatus=='未开始'&&status!='进行中'}}" style="font-size:36rpx;margin-right:30rpx;color:#00c203;">{{item.elstatus}}</label>
+    <label id="{{item.elcationname}}" bindtap="" wx:if="{{item.elstatus=='未开始'&&status=='进行中'}}" style="font-size:36rpx;margin-right:30rpx;color:#00c203;">{{item.elstatus}}</label>
+    <!-- 进行中的按钮 -->
+    <label id="{{item.elcationname}}" wx:if="{{item.elstatus=='进行中'}}" bindtap="" style="font-size:36rpx;margin-right:30rpx;color:rgb(257,127,25);">{{item.elstatus}}</label>
+    <!-- 已结束的按钮 -->
+    <label wx:if="{{item.elstatus=='已结束'}}" style="font-size:36rpx;margin-right:30rpx;color:#fe6c6c;">{{item.elstatus}}</label>
+  </view>
+  
+</view>
+
+

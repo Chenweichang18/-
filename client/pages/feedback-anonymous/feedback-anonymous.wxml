@@ -1,0 +1,5 @@
+<view class='view1'>
+  <text class="t1">反馈内容</text>
+  <textarea class="i1" placeholder="请输入" bindinput='getinput1'></textarea>
+</view>
+<button class='btn1' bindtap='tijiao' hover-class='btn1_hover'><text class="t2">提交</text></button>

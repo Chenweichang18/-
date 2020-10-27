@@ -1,0 +1,2 @@
+<image class='img1' src="../images/shim.png" bindtap="smtiaozhuan"></image>
+<image class="img2" src="../images/nim.png" bindtap="nmtiaozhuan"></image>

@@ -1,0 +1,2 @@
+page{background-color: rgb(244, 244, 244);padding-top: 10rpx;}
+.ts{width: 700rpx;height:1500rpx;margin-left:25rpx;background-color: white; position: relative;border-radius: 30rpx;padding-top: 20rpx;padding-bottom: 100rpx;}

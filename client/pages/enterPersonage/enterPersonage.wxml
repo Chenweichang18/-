@@ -1,0 +1,54 @@
+<!--client/pages/enterPersonage/enterPersonage.wxml-->
+<view class="title">请选择类型</view>
+<view class="select_type">
+  <view class="select_1">类型选择</view>
+  <view class="select_2">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="select_3">
+    <image class="image_select" src="../images/bottom.png"></image>
+  </view>
+</view>
+<view class="title">输入信息</view>
+<!-- 大学生 -->
+<view class="add_person" hidden="{{index==0}}">
+  <view class="left">添加名单</view>
+  <view class="right" bindtap="add_xingming">
+    <image class="img_add" src="../images/add.png"></image>
+  </view>
+</view>
+<view class="line"></view>
+<view class="mingdan" hidden="{{index==0}}">
+  <block wx:for='{{mingdanList}}' wx:key='index'>
+    <view class="item">{{item}}</view>
+  </block>
+</view>
+<!-- 名人榜 -->
+<view class="mingren" hidden="{{index==1}}">
+  <view class="xingming">
+    <text class="text_name">姓名</text>
+    <input class="inuput" placeholder='请输入真实姓名' bindinput="inputMingName"></input>
+  </view>
+  <view class="shuoming">
+    <text class="text_shuo">人物介绍</text>
+    <textarea class="content_text" placeholder='人物介绍说明' bindinput="inputTextarea"></textarea>
+  </view>
+</view>
+<view class="add_btn" bindtap="add">添加</view>
+<!-- 自定义弹窗 -->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="top"></view>
+  <view class="input">
+    <input class="name" placeholder='请输入大学生姓名' bindinput="inputName"></input>
+  </view>
+  <view class="bottom">
+    <view class="cancel" bindtap="cancel">取消</view>
+    <view class="sure" bindtap="submit">确定</view>
+  </view>
+</view>

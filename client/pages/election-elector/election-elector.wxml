@@ -1,0 +1,46 @@
+<!-- 搜索框 -->
+<view class="find">
+  <image class="img1" src="../images/find.png"></image>
+  <input class="input1" type="text" placeholder="查询选举人" bindinput="getinput1"></input>
+  <label class="btn1" bindtap="find">查询</label>
+</view>
+
+<!-- 如果list为空 -->
+  <view wx:if="{{list==''}}" style="clear:both;margin:200rpx 0 0 157rpx;">
+    <image src="../images/wuxj.png" style="width:435rpx;height:412rpx;"></image>
+  </view>
+<!-- for循环内容 -->
+<block wx:for='{{list}}' wx:key='title'>
+  
+  <view class="item">
+  <image class="blue" src="../images/zshi.png"></image>
+  <view wx:if="{{piaoshu==1&&job=='村民'}}" class="toupiao" id="{{item.voteName}}" bindtap="toupiao">投票</view>
+  <view wx:if="{{job=='游客'}}" class="toupiao" id="{{item.voteName}}" bindtap="baocuo">投票</view>
+  <view wx:if="{{piaoshu==0}}" class="toupiao" style="color:red;" id="{{item.voteName}}">您已投票</view>
+  <text style='position:absolute;left:250rpx;top:17rpx;'>{{item.voteName}}</text>
+  <text style='position:absolute;left:40rpx;top:77rpx;font-size:28rpx;'>竞选职称：</text>
+  <text style='position:absolute;left:400rpx;top:77rpx;font-size:28rpx;'>{{item.votePosition}}</text>
+  <text style='position:absolute;left:40rpx;top:127rpx;font-size:28rpx;'>竞选宣言：</text>
+  <view class="yuan {{item.open ? 'hou' : ''}}">
+      <text><text style="color:transparent">xxxx</text>{{item.voteNote}}</text>
+  </view>
+  <text style="color:transparent;">xxxx</text>
+  <view id="{{item.name}}" bindtap="kindToggle">
+  <view class="zhankai"><text class="t1">{{item.open?'收起':'...展开'}}</text></view>
+  </view>
+
+
+
+
+
+
+    <!-- <label id="{{item.title}}" bindtap="start" wx:if="{{item.type=='开始'}}" style="font-size:36rpx;margin-right:30rpx;color:#00c203;">{{item.type}}</label>
+    <label wx:if="{{item.type=='进行中'}}" style="font-size:36rpx;margin-right:30rpx;color:#fe6c6c;">{{item.type}}</label> -->
+  </view>
+  
+</block>
+<view wx:if="{{ing=='进行中'}}" class="btn22">添加选举人</view>
+<navigator class="view2" url='../election-addelector/election-addelector?t={{tit}}'>
+<view wx:if="{{ing!='进行中'}}" class="btn2">添加选举人</view>
+</navigator>
+

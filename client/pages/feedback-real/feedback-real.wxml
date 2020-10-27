@@ -1,0 +1,11 @@
+<view class='view1'>
+  <view class="view2">
+    <text class="t1">反馈人</text>
+    <input type="text" class="i1" placeholder="姓名" bindinput='getinput1'></input>
+  </view>
+  <view class="view3">
+    <text class="t2">反馈内容</text>
+    <textarea class="i2" placeholder="请输入" bindinput='getinput2'></textarea>
+  </view>
+</view>
+<button class='btn1' bindtap='tijiao' hover-class='btn1_hover'><text class="t3">提交</text></button>

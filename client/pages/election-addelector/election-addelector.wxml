@@ -1,0 +1,32 @@
+<view class="view1">
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">姓名</text>
+  <input class="i1" type='text' placeholder='姓名' confirm-type='done' bindinput='getinput1'></input></view>
+  <!-- 普通选择器：性别 -->
+  <picker bindchange="pickChange" value="{{index}}" range="{{SexArray}}">
+    <view class="xm">
+        <text style="font-size: 34rpx;float:left;">性别</text>
+        <text style="position: absolute; float: left;left:240rpx; font-size: 34rpx;">{{SexArray[index]}}</text><image style="width:18rpx;height:35rpx;float:right;margin-right:50rpx;margin-top:5rpx;" src="../images/right.png"></image></view>
+  </picker>
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">联系方式</text>
+  <input class="i1" type='number' placeholder='手机或固话' confirm-type='done' bindinput='getinput4'></input></view>
+<!-- 普通选择器：政治面貌 -->
+  <picker bindchange="pickChangea" value="{{indexa}}" range="{{qaArray}}">
+    <view class="xm">
+        <text style="font-size: 34rpx;float:left;">政治面貌</text>
+        <text style="position: absolute; float: left;left:240rpx; font-size: 34rpx;">{{qaArray[indexa]}}</text><image style="width:18rpx;height:35rpx;float:right;margin-right:50rpx;margin-top:5rpx;" src="../images/right.png"></image></view>
+  </picker>
+  <!-- 普通选择器：选举职位 -->
+  <picker bindchange="pickChangeb" value="{{indexb}}" range="{{qbArray}}">
+    <view class="xm">
+        <text style="font-size: 34rpx;float:left;">选举职位</text>
+        <text style="position: absolute; float: left;left:240rpx; font-size: 34rpx;">{{qbArray[indexb]}}</text><image style="width:18rpx;height:35rpx;float:right;margin-right:50rpx;margin-top:5rpx;" src="../images/right.png"></image></view>
+  </picker>
+  
+  <view class="xm2">
+  <text style="font-size: 34rpx;float:left;">选举宣言</text>
+  <textarea class="i2" type='text' placeholder='请输入您的选举宣言' confirm-type='done' bindinput='getinput5'></textarea></view>
+  </view>
+  <button class='btn1' bindtap="queding" hover-class='btn1_hover'><text style="color:white;">确定</text></button>
+

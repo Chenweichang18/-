@@ -1,0 +1,47 @@
+<!--client/pages/financialAdd/financialAdd.wxml-->
+<view class="title">请选择类型</view>
+<view class="select_type">
+  <view class="select_1">类型</view>
+  <view class="select_2">
+    <picker bindchange="bindPickerChangeOut" value="{{index}}" range="{{array}}">
+      <view class="sel" style="{{type?'color:#353535;':''}}">{{type?typeText:'请选择类型'}}</view>
+      <view class="picker">
+        <!-- {{array[0]}} -->
+      </view>
+    </picker>
+  </view>
+  <view class="select_3">
+    <image class="image_select" src="/images/bottom.png"></image>
+  </view>
+</view>
+<view class="title">请选择来源</view>
+<view class="select_type">
+  <view class="select_1">来源</view>
+  <view class="select_2">
+    <picker bindchange="bindPickerChangeSrc" value="{{index}}" range="{{srcArray}}">
+      <view class="sel" style="{{src?'color:#353535;':''}}">{{src?srcText:'请选择来源'}}</view>
+      <view class="picker">
+        <!-- {{array[index]}} -->
+      </view>
+    </picker>
+  </view>
+  <view class="select_3">
+    <image class="image_select" src="/images/bottom.png"></image>
+  </view>
+</view>
+<view class="title">输入信息</view>
+<view class="add_person">
+  <view class="left">金额</view>
+  <input class="right" placeholder="请输入金额" bindinput="jine_input"></input>
+</view>
+<view class="line"></view>
+<view class="add_person">
+  <view class="left">经办人</view>
+  <input class="right" placeholder="请输入完整姓名" bindinput="jingbanren_input"></input>
+</view>
+<view class="line"></view>
+<view class="add_person_1">
+  <view class="left">说明</view>
+  <input class="right_1" placeholder="来源或财务说明" bindinput="shuoming_input"></input>
+</view>
+<view class="add_btn" bindtap="add">添加</view>

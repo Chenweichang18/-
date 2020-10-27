@@ -1,0 +1,5 @@
+page{background-color: rgb(244, 244, 244);}
+.t1{position:absolute;top:57rpx;color:white;font-size:80rpx;font-family: STHupo;}
+.view1{width: 652rpx;height: 800rpx;background: white;position: absolute;left: 49rpx;top: 400rpx;border-radius: 30rpx;}
+.lan{width: 498rpx;height: 100rpx;margin-left: 80rpx;border-bottom: 1rpx solid gray;display: flex;justify-content: space-between;align-items: center;font-size: 35rpx;}
+.view2{width:100%;height:91rpx;background:rgb(254,108,108);position:absolute;bottom:0;display:flex;justify-content: center;align-items: center;color:white;font-size:35rpx;}

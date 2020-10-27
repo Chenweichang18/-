@@ -1,0 +1,39 @@
+<view class="ts">
+  <view style="margin-left:212rpx;">
+    <image style="margin-top:24rpx;width:100rpx;height:3rpx;float:left;" src="../images/xian.png"></image>
+    <text style="font-size:40rpx;float:left">{{name}}</text>
+    <image style="margin-top:24rpx;width:100rpx;height:3rpx;float:left;" src="../images/xian.png"></image>
+  </view>
+  <view style="width:650rpx;height:5rpx;background-color:rgba(158, 152, 152, 0.247);position:absolute;top:100rpx;left:25rpx;"></view>
+<!-- 习俗 -->
+  <view wx:if="{{name=='习俗'}}" style="width:600rpx;background-color:rgba(128, 0, 128, 0.432);position:absolute;top:140rpx;left:25rpx;padding:30rpx;border-radius:30rpx;">
+  <image src='{{url1}}' style="width:600rpx;height:300rpx;float:left;"></image>
+  <text style="font-size:30rpx;float:left;">{{list[2].ps}}</text>
+  </view>
+  <view wx:if="{{name=='习俗'}}" style="width:600rpx;background-color:rgba(128, 0, 128, 0.432);position:absolute;top:760rpx;left:25rpx;padding:30rpx;border-radius:30rpx;">
+  <image src='{{url2}}' style="width:600rpx;height:300rpx;float:left;"></image>
+  <text style="font-size:30rpx;float:left;">{{list[3].ps}}</text>
+  </view>
+<!-- 景色 -->
+  <view wx:if="{{name=='景色'}}" style="width:600rpx;background-color:rgba(128, 0, 128, 0.432);position:absolute;top:140rpx;left:25rpx;padding:30rpx;border-radius:30rpx;">
+  <image src='{{url1}}' style="width:600rpx;height:300rpx;float:left;"></image>
+  <text style="font-size:30rpx;float:left;">{{list[4].ps}}</text>
+  </view>
+  <view wx:if="{{name=='景色'}}" style="width:600rpx;background-color:rgba(128, 0, 128, 0.432);position:absolute;top:760rpx;left:25rpx;padding:30rpx;border-radius:30rpx;">
+  <image src='{{url2}}' style="width:600rpx;height:300rpx;float:left;"></image>
+  <text style="font-size:30rpx;float:left;">{{list[5].ps}}</text>
+  </view>
+<!-- 特产 -->
+  <view wx:if="{{name=='特产'}}" style="width:600rpx;background-color:rgba(128, 0, 128, 0.432);position:absolute;top:140rpx;left:25rpx;padding:30rpx;border-radius:30rpx;">
+  <image src='{{url1}}' style="width:600rpx;height:300rpx;float:left;"></image>
+  <text style="font-size:30rpx;float:left;">{{list[0].ps}}</text>
+  </view>
+  <view wx:if="{{name=='特产'}}" style="width:600rpx;background-color:rgba(128, 0, 128, 0.432);position:absolute;top:760rpx;left:25rpx;padding:30rpx;border-radius:30rpx;">
+  <image src='{{url2}}' style="width:600rpx;height:300rpx;float:left;"></image>
+  <text style="font-size:30rpx;float:left;">{{list[1].ps}}</text>
+  </view>
+  
+
+
+
+</view>

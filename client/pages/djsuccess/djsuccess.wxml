@@ -1,0 +1,5 @@
+<image class="p1" src="../images/sblue.png"></image>
+<label class="l1">登记成功</label>
+<label class="l2">请耐心等待村干部审核处理</label>
+<button class='btn1' bindtap='queding' hover-class='btn1_hover'><text class="t1">确定</text></button>
+<button class='btn2' bindtap='fanhui' hover-class='btn1_hover'><text class="t2">返回</text></button>

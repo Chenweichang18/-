@@ -1,0 +1,7 @@
+page{background-color: rgb(244, 244, 244);padding-top:29rpx; }
+.view1{width: 750rpx;height: 370rpx;background-color: white;padding-top:28rpx; position: relative;}
+.t1{font-size: 34rpx;margin-left:31rpx;position: absolute;top: 30rpx;}
+.i1{width: 508rpx; font-size: 34rpx;margin-left: 31rpx;position: absolute;left:160rpx;top: 30rpx}
+.btn1{width: 690rpx;height: 88rpx;position: absolute;display: flex; align-items: center;justify-content: center;top: 460rpx;left: 30rpx;font-size: 34rpx;size: 20rpx;background: #b64dcd;}
+.btn1_hover{background: #b64dcdc4}
+.t2{color: white;}

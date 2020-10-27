@@ -1,0 +1,17 @@
+page{background-color: rgb(244, 244, 244);padding-top: 30rpx;}
+.find{width: 712rpx;height: 65rpx;border-radius: 20rpx;margin:0rpx 19rpx 20rpx 19rpx;background-color: white;float: left;display: flex;align-items: center;}
+.find .img1{width: 30rpx;height: 30rpx;display: block; float: left;margin-left: 20rpx;}
+.find .input1{width: 450rpx;float: left;margin-left: 70rpx;text-align: center;}
+.find .btn1{float: right;font-size: 30rpx;color: gray;margin-left: 30rpx;padding-left:20rpx;border-left: 1rpx solid gray;}
+
+.item{width: 712rpx;background-color: white;clear: both;border-radius: 20rpx;margin-left: 19rpx;margin-bottom: 20rpx;position: relative;}
+.item .blue{position: absolute;width:101rpx;height:38rpx;left: -5rpx;top: 22rpx;}
+.toupiao{position: absolute;width: 185rpx;height: 90%;display: flex;justify-content: center;align-items: center;border-left: 1rpx solid rgba(128, 128, 128, 0.582);right: 0;top:15rpx;}
+.yuan {padding-top: 170rpx;padding-left: 40rpx; line-height: 41rpx;height: 80rpx;overflow: hidden;width: 450rpx;font-size: 26rpx;}
+.hou {height: auto;}
+.zhankai{width: 82rpx;height: 40rpx;background-color: white; position: absolute;right: 198rpx;bottom: 44rpx;font-size: 32rpx;}
+.t1{font-size:26rpx;color:rgb(168, 168, 168);}
+
+
+.btn2{width:287rpx;height:70rpx;background-color:#fe6c6c;font-size:34rpx;display:flex;justify-content: center;align-items: center;border-radius: 10rpx;left: 230rpx;bottom: 50rpx;color: white;position: fixed}
+.btn22{width:287rpx;height:70rpx;background-color:#fe6c6c75;font-size:34rpx;display:flex;justify-content: center;align-items: center;border-radius: 10rpx;left: 230rpx;bottom: 50rpx;color: white;position: fixed}

@@ -1,0 +1,59 @@
+<image style="width:750rpx;height:387rpx;" src="../images/myb.png"></image>
+<image style="width:126rpx;height:126rpx;position:absolute;top:45rpx;left:312rpx;border-radius: 126rpx;" src="{{url}}"></image>
+<view style="width:100%;position:absolute;top:160rpx;display:flex;justify-content:center;"><button style="font-size:40rpx;color:white;border:0;" hover-class='none' plain bindgetuserinfo="wx_login" open-type='getUserInfo'>{{username}}</button></view>
+
+<text style="position:absolute;top:188rpx;right:103rpx;font-size:40rpx;color:white;">{{zhiwei}}</text>
+
+<view class="view1">
+  <image class="img1" src="../images/dinwei.png"></image>
+  <text class="t1">土豪村</text>
+  <text class="t2">已认证</text>
+  <text style="top: 117rpx;left: 53rpx;" class="t3">总人数</text>
+  <view style='width:{{allnum/4}}rpx;max-width:400rpx;background-color:#2558ff;top: 117rpx;left: 200rpx;' class="viewnum">
+    <text style="color:white;float:right;">{{allnum}}</text>
+  </view>
+
+  <text style="top: 182rpx;left: 53rpx;" class="t3">贫困人数</text>
+  <view style='width:{{pknum/4}}rpx;max-width:300rpx;background-color:#fe6c6c;top: 182rpx;left: 200rpx;' class="viewnum">
+    <text style="color:white;float:right;">{{pknum}}</text>
+  </view>
+
+  <text style="top: 247rpx;left: 53rpx;" class="t3">留守儿童</text>
+  <view style='width:{{lsnum/4}}rpx;max-width:200rpx;background-color:#a431fd;top: 247rpx;left: 200rpx;' class="viewnum">
+    <text style="color:white;float:right;">{{lsnum}}</text>
+  </view>
+
+  <text style="top: 312rpx;left: 53rpx;" class="t3">空巢老人</text>
+  <view style='width:{{kcnum/4}}rpx;max-width:200rpx;background-color:#fc9209;top: 312rpx;left: 200rpx;' class="viewnum">
+    <text style="color:white;float:right;">{{kcnum}}</text>
+  </view>
+</view>
+
+<view class="view2">
+
+  <!-- 图标 -->
+  <image style="width:47rpx;height:40rpx;position:absolute;top:32rpx;left:38rpx;" src="../images/guanyu.png"></image>
+  <image style="width:47rpx;height:40rpx;position:absolute;top:118rpx;left:38rpx;" src="../images/shuoming.png"></image>
+  <image style="width:47rpx;height:40rpx;position:absolute;top:205rpx;left:38rpx;" src="../images/lishi.png"></image>
+  <image style="width:47rpx;height:40rpx;position:absolute;top:294rpx;left:38rpx;" src="../images/xiugai.png"></image>
+
+  <!-- 按钮 -->
+  <button class='btn1' bindtap="guanyu">
+    <text style="align:center;margin-left:-370rpx;">关于小程序</text>
+  </button>
+  <button class='btn1' bindtap="shuoming">
+    <text style="align:center;margin-left:-473rpx;">说明</text>
+  </button>
+  <button class='btn1' bindtap="lishi">
+    <text style="align:center;margin-left:-408rpx;">历史建议</text>
+  </button>
+  <button class='btn2' bindtap="xiugai">
+    <text style="align:center;margin-left:-340rpx;">修改个人信息</text>
+  </button>
+
+  <!-- 箭头 -->
+  <image style="width:18rpx;height:35rpx;position:absolute;top:32rpx;right:45rpx;" src="../images/right.png"></image>
+  <image style="width:18rpx;height:35rpx;position:absolute;top:118rpx;right:45rpx;" src="../images/right.png"></image>
+  <image style="width:18rpx;height:35rpx;position:absolute;top:205rpx;right:45rpx;" src="../images/right.png"></image>
+  <image style="width:18rpx;height:35rpx;position:absolute;top:294rpx;right:45rpx;" src="../images/right.png"></image>
+</view>

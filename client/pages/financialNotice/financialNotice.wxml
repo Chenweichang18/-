@@ -1,0 +1,36 @@
+<!--client/pages/financialNotice/financialNotice.wxml-->
+<view class="page">
+  <view class="tab">
+    <view class="left" style="{{current=='outlaye'?' border-bottom: solid 8rpx #1aad19;color: #1aad19;':'border-bottom:0;color: #353535;'}}" bindtap="left">支出</view>
+    <view class="right" style="{{current=='income'?' border-bottom: solid 8rpx #fd7276;color: #fd7276;':'border-bottom:0;color: #353535;'}}" bindtap="right">收入</view>
+  </view>
+  <scroll-view class="content" scroll-y='{{true}}' scroll-x='{{true}}' bindscroll="scroll">
+    <block wx:for="{{current=='outlaye'?outlayeList:incomeList}}" wx:key='index'>
+      <view class="item" style="{{!flag[index]?'height:99rpx;':'height:359rpx;'}}" data-index="{{index}}" bindtap="itemclick">
+        <view class="title">
+          <view class="item_left">{{item.moneySouce}}</view>
+          <view class="item_right">
+            <view class="item_right_left">￥{{item.money}}</view>
+            <view class="item_right_right">
+              <image src="{{!flag[index]?'../images/right.png':'../images/bottom.png'}}" style="{{!flag[index]?'height:28rpx;width:16rpx;':'height:16rpx;width:28rpx;'}}" class="image"></image>
+            </view>
+          </view>
+        </view>
+        <view class="line" hidden="{{!flag[index]}}"></view>
+        <view class="jingbanren_item" hidden="{{!flag[index]}}">
+          <text class="jingbanren">经办人</text>
+          <text class="jingbanren_name">{{item.djr}}</text>
+        </view>
+        <view class="jingbanren_item" hidden="{{!flag[index]}}">
+          <text class="jingbanren">时间</text>
+          <text class="jingbanren_name">{{item.moneyData}}</text>
+        </view>
+        <view class="message" hidden="{{!flag[index]}}">说明</view>
+        <view class="msg" hidden="{{!flag[index]}}">{{item.moneyUse}}</view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="add-view" bindtap="add" hidden="{{visible}}">
+    <view class="btn"> 添加</view>
+  </view>
+</view>

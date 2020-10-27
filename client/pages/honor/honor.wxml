@@ -1,0 +1,33 @@
+<!--client/pages/honor/honor.wxml-->
+<view class="page">
+  <view class="tab">
+    <view class="left" style="{{current=='personage'?' border-bottom: solid 8rpx #ffa03b;color: #ffa03b;':'border-bottom:0;color: #353535;'}}" bindtap="left">名人榜</view>
+    <view class="right" style="{{current=='student'?' border-bottom: solid 8rpx #ffa03b;color: #ffa03b;':'border-bottom:0;color: #353535;'}}" bindtap="right">大学生名单</view>
+  </view>
+  <scroll-view class="content" scroll-y='{{true}}' hidden="{{false}}" bindscroll="scroll">
+    <block wx:for="{{current=='personage'?personageList:studentNum}}" wx:key='index'>
+      <view class="item" style="{{!flag[index]?'height:99rpx;':'height:309rpx;'}}" data-index="{{index}}" bindtap="itemclick">
+        <view class="title">
+          <view class="item_left">{{current=='personage'?item.gloryName:2020}}</view>
+          <view class="item_right">
+            <view class="item_right_left">{{current=='personage'?item.gloryIdentity:studentNum+'人'}}</view>
+            <view class="item_right_right">
+              <image src="{{!flag[index]?'../images/right.png':'../images/bottom.png'}}" style="{{!flag[index]?'height:28rpx;width:16rpx;':'height:16rpx;width:28rpx;'}}" class="image"></image>
+            </view>
+          </view>
+        </view>
+        <view class="line" hidden="{{!flag[index]}}"></view>
+        <view class="message" hidden="{{!flag[index]}}">{{current=='personage'?'介绍':''}}</view>
+        <view class="msg" hidden="{{!flag[index]}}">{{item.gloryMessage}}</view>
+        <view class="item_name">
+          <block wx:for="{{studentList}}" wx:key='index' hidden="{{current=='personage'}}">
+            <view class="msg_name" hidden="{{current=='personage'}}">{{item}}</view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="add-view" bindtap="add" hidden="{{visible}}">
+    <view class="btn"> 添加</view>
+  </view>
+</view>

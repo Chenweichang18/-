@@ -1,0 +1,51 @@
+<text class="t1">基本信息</text>
+<view class="view1">
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">姓名</text>
+  <input class="i1" type='text' value='{{list[0].name}}' confirm-type='done' bindinput='getinput1'></input></view>
+  <!-- 普通选择器：性别 -->
+  <picker bindchange="pickChange" value="{{index}}" range="{{SexArray}}">
+    <view class="xm">
+        <text style="font-size: 34rpx;float:left;">性别</text>
+        <text style="position: absolute; float: left;left:240rpx; font-size: 34rpx;">{{SexArray[index]}}</text></view>
+  </picker>
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">年龄</text>
+  <input class="i1" type='number' value='{{list[0].age}}' confirm-type='done' bindinput='getinput3'></input></view>
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">联系方式</text>
+  <input class="i1" type='number' value='{{list[0].phone}}' confirm-type='done' bindinput='getinput4'></input></view>
+  <view class="xm2">
+  <text style="font-size: 34rpx;float:left;">家庭住址</text>
+  <input class="i1" type='text' value='{{list[0].address}}' confirm-type='done' bindinput='getinput5'></input></view>
+</view>
+
+<text class="t2">乡村选择</text>
+<view class="view2">
+<view class="xm2">
+  <text style="font-size: 34rpx;float:left;">乡村名</text>
+  <input class="i1" type='text' value='{{list[0].town}}' confirm-type='done' bindinput='getinput6'></input></view></view>
+
+<text class="t3">家庭情况</text>
+<view class="view3">
+<!-- 普通选择器：留守儿童 -->
+  <picker bindchange="pickChangea" value="{{indexa}}" range="{{qaArray}}">
+    <view class="xm">
+        <text style="font-size: 34rpx;float:left;">留守儿童</text>
+        <text style="position: absolute; float: left;left:240rpx; font-size: 34rpx;">{{qaArray[indexa]}}</text></view>
+  </picker>
+  <!-- 普通选择器：空巢老人 -->
+  <picker bindchange="pickChangeb" value="{{indexb}}" range="{{qbArray}}">
+    <view class="xm">
+        <text style="font-size: 34rpx;float:left;">空巢老人</text>
+        <text style="position: absolute; float: left;left:240rpx; font-size: 34rpx;">{{qbArray[indexb]}}</text></view>
+  </picker>
+  <!-- 普通选择器：贫困家庭 -->
+  <picker bindchange="pickChangec" value="{{indexc}}" range="{{qcArray}}">
+    <view class="xm2">
+        <text style="font-size: 34rpx;float:left;">贫困家庭</text>
+        <text style="position: absolute; float: left;left:240rpx; font-size: 34rpx;">{{qcArray[indexc]}}</text></view>
+  </picker>
+  </view>
+  <button class='btn1' bindtap='queding' hover-class='btn1_hover'><text style="color:white;">确定</text></button>
+

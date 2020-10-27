@@ -1,0 +1,35 @@
+page{background-color: rgb(244, 244, 244);
+}
+.u-wrp-bnr {width: 700rpx;height: 306rpx;margin-left: 25rpx;display: block;position: relative;background: #f0f0f0;
+}
+.u-img-slide {width: 100%;height: inherit;
+}
+.dw{width: 700rpx;height: 75rpx;background-color: white;margin-left: 25rpx;position: relative;
+}
+.dw .img1{width: 40rpx;height: 50rpx;margin-left:29rpx;margin-top: 15rpx;display: block;float: left; 
+}
+.dw .t1{font-size: 35rpx;font-weight: 550;margin-top: 28rpx;margin-left: 20rpx;float: left;
+}
+.dw .t2{font-size: 35rpx;font-weight: bold;float: left;margin-top: 24rpx;margin-left: 80rpx;
+}
+.dw .t3{font-size: 35rpx;font-weight: 540;color: rgb(255, 177, 106);float: left;top: 24rpx;right: 16rpx;
+position: absolute;
+}
+.gn{ width: 700rpx;height: 260rpx;background-color: white;margin: 25rpx 25rpx;padding-top: 35rpx;
+}
+.gn .t4{font-size: 30rpx;margin-left: 16rpx;
+}
+.gn .cg{float: left;margin-left: 33rpx;
+}
+.gn .cw{float: left;margin-left: 20rpx;
+}
+.gn .gr{float: left;margin-left: 20rpx;
+}
+.gn .xx{float: left;margin-top: 55rpx;margin-left: 33rpx;
+}
+.gn .cm{float: left;margin-top: 55rpx;margin-left: 20rpx;
+}
+.gn .fk{float: left;margin-top: 55rpx; margin-left: 20rpx;
+}
+.ts{width: 700rpx;height: 1050rpx;margin-left:25rpx;background-color: white; position: relative;padding-top:20rpx;
+}

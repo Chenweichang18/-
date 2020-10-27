@@ -1,0 +1,40 @@
+<text class="t1">基本信息</text>
+<view class="view1">
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">姓名</text>
+  <input class="i1" type='text' value='{{information[0].name}}'  confirm-type='done' bindinput='getinput1' disabled='none'></input></view>
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">性别</text>
+  <input class="i1" type='text' value='{{information[0].sex}}' confirm-type='done' disabled='none'bindinput='getinput1'></input></view>
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">年龄</text>
+  <input class="i1" type='number' value='{{information[0].age}}' confirm-type='done' disabled='none'bindinput='getinput3'></input></view>
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">联系方式</text>
+  <input class="i1" type='number' value='{{information[0].phone}}' confirm-type='done' disabled='none'bindinput='getinput4'></input></view>
+  <view class="xm2">
+  <text style="font-size: 34rpx;float:left;">家庭住址</text>
+  <input class="i1" type='text' value='{{information[0].address}}' confirm-type='done' disabled='none'bindinput='getinput5'></input></view>
+</view>
+
+<text class="t2">乡村选择</text>
+<view class="view2">
+<view class="xm2">
+  <text style="font-size: 34rpx;float:left;">乡村名</text>
+  <input class="i1" type='text' value='{{information[0].town}}' confirm-type='done' disabled='none'bindinput='getinput6'></input></view></view>
+
+<text class="t3">家庭情况</text>
+<view class="view3">
+<!-- 普通选择器：留守儿童 -->
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">留守儿童</text>
+  <input class="i1" type='text' value='{{information[0].ifset}}' confirm-type='done' disabled='none'bindinput='getinput1'></input></view>
+  <view class="xm">
+  <text style="font-size: 34rpx;float:left;">空巢老人</text>
+  <input class="i1" type='text' value='{{information[0].ifalone}}' confirm-type='done' disabled='none'bindinput='getinput1'></input></view>
+  <view class="xm2">
+  <text style="font-size: 34rpx;float:left;">贫困家庭</text>
+  <input class="i1" type='text' value='{{information[0].ifpoor}}' confirm-type='done' disabled='none'bindinput='getinput1'></input></view>
+  </view>
+  <button class='btn1' bindtap='jujue' hover-class='btn1_hover'><text style="color:white;">拒绝</text></button>
+  <button class='btn2' bindtap='tongguo' hover-class='btn2_hover'><text style="color:white;">通过</text></button>

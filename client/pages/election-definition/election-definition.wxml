@@ -1,0 +1,53 @@
+<!-- 说明view -->
+<view class="view1">
+  <text class="t1">{{i_name}}说明</text>
+  <text class="t2">{{i_explain}},点击下方即可投票，请大家公正投票</text>
+</view>
+
+<!-- 职位循环 -->
+<block wx:for='{{list2}}' wx:key='id'>
+<navigator class="view2" url='../election-elector/election-elector?position={{item.position}}&title={{i_name}}&ing={{ing}}'>
+  <view class="view2">
+    <text style="font-size:35rpx;color:#fe6c6c;">{{item.position}}</text>
+  </view>
+</navigator>
+</block>
+
+<!-- 添加职位按钮 -->
+<view wx:if="{{ing=='进行中'}}" class="btn22">添加职位</view>
+<view wx:if="{{ing!='进行中'}}" class="btn2" bindtap="showDialogBtn">添加职位</view>
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <!-- 头部 -->
+  <view class="modal-title">添加职位</view>
+  
+  <!-- 中间部分 -->
+    <view class="modal-input">
+      <text style="font-size:32rpx;">职位</text>
+      <!-- 下拉列表 -->
+      <view class='select_box'>
+        <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='../images/bottom.png'></image>      
+      </view>
+      <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+      <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text></view>
+    </view>
+
+      <text style="font-size:32rpx;">人数</text>
+      <input type="text" bindinput="inputChange2" class="input1" placeholder="请输入人数"></input>
+    </view>
+    
+  <!-- 尾部 -->
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+
+</view>
+
+
+

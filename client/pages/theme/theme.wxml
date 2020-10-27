@@ -1,0 +1,25 @@
+<view class="view1">
+  <view class="mc">
+    <text style="font-size: 36rpx;">选举名称</text>
+    <input class="i1" type='text' placeholder='会议名称' bindinput='getinput1'></input>
+  </view>
+  <view class="mc">
+    <text style="font-size: 36rpx;">结束时间</text>
+    <!-- 日期选择器 -->
+    <picker style="width:300rpx;" mode="date" value="{{date}}" start="2015-09-01" end="2025-09-01" bindchange="bindDateChange">
+    <label style="margin-left:50rpx;"><image style="width:38rpx;height:38rpx;" src="../images/riqi.png"></image>{{date}}</label> 
+    </picker>
+    <!-- 时间选择器 -->
+    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+     <label style="margin-left:0rpx;"><image style="width:38rpx;height:38rpx;" src="../images/shizhong.png"></image>{{time}}</label> 
+    </picker>
+
+  </view>
+
+  <view class="view2">
+    <text style="font-size: 36rpx;">选举说明<text style="color:white;">1111</text></text>
+    <textarea class="i2" placeholder="请输入" bindinput='getinput3'></textarea>
+  </view>
+
+</view>
+<button wx:if="{{name!=null}}&&{{shuoming!=null}}" class="btn2" bindtap="tiaozhuan">确定</button>

@@ -1,0 +1,10 @@
+<view wx:if="{{type==''}}" class="view1" bindtap="tiaozhuan">
+  <image class='img1' src="../images/dengji.png"></image>
+  <view style="width:550rpx;margin-top:30rpx;margin-left:25rpx;float:left;">
+    <text class="t1">村民基本信息录入\n</text>
+    <text class="t2">录入村民的基本信息到系统中，让村干部能更好地管理乡村，建设更加美丽的新农村。</text>
+  </view>
+</view>
+<view wx:if="{{type!=''}}" style="margin-left:125rpx;width:500rpx;height:600rpx;display:flex;justify-content:center;align-items:center;text-align:center;font-size:40rpx;">
+  您已经登记了，请等候管理员进行审核！
+</view>

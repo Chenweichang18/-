@@ -1,0 +1,239 @@
+/* client/pages/enterPersonage/enterPersonage.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+}
+
+.title {
+  width: 100%;
+  height: 99rpx;
+  line-height: 99rpx;
+  text-align: left;
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: #888;
+}
+
+.select_type {
+  display: flex;
+  height: 99rpx;
+  background-color: white;
+  line-height: 99rpx;
+}
+
+.select_1 {
+  flex: 1;
+  color: #353535;
+  font-size: 34rpx;
+  padding-left: 31rpx;
+}
+
+.select_2 {
+  flex: 1;
+  color: #353535;
+  font-size: 34rpx;
+}
+
+.select_3 {
+  flex: 1;
+  text-align: right;
+  padding-right: 28rpx;
+}
+
+.image_select {
+  height: 16rpx;
+  width: 28rpx;
+}
+
+.add_person {
+  background-color: white;
+  height: 99rpx;
+  display: flex;
+  line-height: 99rpx;
+}
+
+.left {
+  flex: 1;
+  padding-left: 31rpx;
+  color: #353535;
+  font-size: 34rpx;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+  padding-right: 31rpx;
+}
+
+.img_add {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.line {
+  height: 2rpx;
+  width: 30rpx;
+  background-color: #f6f6f6;
+}
+
+.mingren {
+  height: 300rpx;
+  width: 100%;
+  background-color: white;
+}
+
+.xingming {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  line-height: 80rpx;
+  border-bottom: solid #f6f6f6 1rpx;
+}
+
+.mingdan {
+  height: 300rpx;
+  width: 100%;
+  padding-top: 26rpx;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.text_name {
+  margin-left: 31rpx;
+  color: #353535;
+  font-size: 34rpx;
+  flex: 1;
+}
+
+.inuput {
+  font-size: 26rpx;
+  flex: 3;
+  height: 80rpx;
+  background: white;
+}
+
+.shuoming {
+  margin-top: 26rpx;
+  display: flex;
+  height: 220rpx;
+}
+
+.content_text {
+  margin-top: 6rpx;
+  height: 220rpx;
+  flex: 3;
+  font-size: 26rpx;
+}
+
+.text_shuo {
+  flex: 1;
+  color: #353535;
+  font-size: 34rpx;
+  margin-left: 31rpx;
+  height: 220rpx;
+}
+
+.item {
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #9a9a9a;
+  border-radius: 20rpx;
+  text-align: center;
+  color: white;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.add_btn {
+  height: 99rpx;
+  margin-top: 44rpx;
+  background-color: #fb992a;
+  text-align: center;
+  color: white;
+  line-height: 99rpx;
+  font-size: 35rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  border-radius: 10rpx;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+
+.modalDlg {
+  width: 580rpx;
+  height: 420rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -250rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  width: 100%;
+  height: 100rpx;
+  background: #fb992a;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.input {
+  width: 100%;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+}
+
+.name {
+  line-height: 200rpx;
+  height: 100rpx;
+  margin-top: 50rpx;
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  border: #f6f6f6 solid 2rpx;
+}
+
+.bottom {
+  height: 120rpx;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  font-size: 36rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.cancel {
+  flex: 1;
+  line-height: 120rpx;
+  border-radius: 35rpx;
+  color: #e64340;
+  border: #f6f6f6 solid 2rpx;
+}
+
+.sure {
+  flex: 1;
+  line-height: 120rpx;
+  border-radius: 35rpx;
+  color: #353535;
+  border: #f6f6f6 solid 2rpx;
+}

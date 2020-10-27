@@ -1,0 +1,51 @@
+<!--client/pages/addNotice/addnotice.wxml-->
+<view class="page">
+  <view class="select_time">请选择活动时间</view>
+  <view class="start_time">
+    <view class="s_time">
+      <view class="left">开始时间</view>
+      <view class="mid">
+        <picker mode="date" value="{{startDate}}" class="input" bindchange="bindDateStartChange">
+          <view class="picker">
+            {{startDate==""?"请选择开始时间":""}}{{startDate}}
+          </view>
+        </picker>
+      </view>
+      <view class="right">
+        <image src="../images/bottom.png" class="img_bottom"></image>
+      </view>
+    </view>
+  </view>
+  <view class="stop_time">
+    <view class="line" />
+    <view class="st_time">
+      <view class="left">结束时间</view>
+      <view class="mid">
+        <picker mode="date" value="{{endDate}}" class="input"  bindchange="bindDateEndChange">
+          <view class="picker">
+            {{endDate==""?"请选择结束时间":""}}{{endDate}}
+          </view>
+        </picker>
+      </view>
+      <view class="right">
+        <image src="../images/箭头-下.png" class="img_bottom"></image>
+      </view>
+    </view>
+  </view>
+  <view class="input_message">输入信息</view>
+  <view class="fuzeren">
+    <view class="name">负责人</view>
+    <input class="input_name" placeholder="请输入活动的负责人" bindinput='fuzeren_input' ></input>
+  </view>
+  <view class="line" />
+  <view class="fuzeren">
+    <view class="name">地点</view>
+    <input class="input_name" placeholder="请输入举办活动的详细地点"  bindinput='didian_input'></input>
+  </view>
+  <view class="line" />
+  <view class="content">
+    <view class="c_name">活动内容</view>
+    <textarea bindinput='content_input' auto-height class="c_content" placeholder="活动内容说明" show-confirm-bar="{{false}}"></textarea>
+  </view>
+  <view class="add_btn" bindtap="add">添加</view>
+</view>
